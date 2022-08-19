@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Silkscreen", cursive;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+.container #showDecimal {
+  font-size: 4em;
+}
+.container input {
+  width: 50vw;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  transition: transform 1.5s;
+}
+.container input:hover {
+  transform: scaleX(1.5);
+}
+.container table tbody tr td {
+  width: 5vw;
+  font-size: 3em;
+}
+.container table tbody tr td.w {
+  color: black;
+  background: white;
+}
+.container table tbody tr td.b {
+  color: white;
+  background: black;
+}/*# sourceMappingURL=style.css.map */
