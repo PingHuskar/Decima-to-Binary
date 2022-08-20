@@ -17,6 +17,8 @@
   align-items: center;
   min-height: 100vh;
   text-align: center;
+  mix-blend-mode: hard-light;
+  color: white;
 }
 .container #showDecimal {
   font-size: 4em;
@@ -30,15 +32,48 @@
 .container input:hover {
   transform: scaleX(1.5);
 }
-.container table tbody tr td {
+.container h2 {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+.container table tbody tr#binary td {
   width: 5vw;
   font-size: 3em;
 }
-.container table tbody tr td.w {
+.container table tbody tr#binary td.w {
   color: black;
   background: white;
 }
-.container table tbody tr td.b {
+.container table tbody tr#binary td.b {
   color: white;
   background: black;
+}
+.container table tbody tr#octonary td {
+  width: 5vw;
+  font-size: 3em;
+  color: white;
+}
+.container table tbody tr#octonary td.black {
+  background: black;
+}
+.container table tbody tr#octonary td.red {
+  background: red;
+}
+.container table tbody tr#octonary td.orange {
+  background: orange;
+}
+.container table tbody tr#octonary td.yellow {
+  background: yellow;
+}
+.container table tbody tr#octonary td.green {
+  background: green;
+}
+.container table tbody tr#octonary td.DeepSkyBlue {
+  background: DeepSkyBlue;
+}
+.container table tbody tr#octonary td.blue {
+  background: blue;
+}
+.container table tbody tr#octonary td.purple {
+  background: purple;
 }/*# sourceMappingURL=style.css.map */
