@@ -1,4 +1,5 @@
-document.getElementById("decimal").max = searchParam.get('max') || 65535
+const searchParam = new URLSearchParams(location.search)
+document.getElementById("decimal").max = searchParam.get('max') || 32767
 const rainbow = ["black","red","orange","yellow","green","DeepSkyBlue","blue","purple"]
 const main = () => {
     document.getElementById("binary").innerHTML = ``
@@ -9,3 +10,4 @@ const main = () => {
     decimal.toString(2).split("").map((val) => document.getElementById("binary").innerHTML += `<td class="${val==1 ? "w" : "b"}">${val}</td>`)
     decimal.toString(8).split("").map((val) => document.getElementById("octonary").innerHTML += `<td class="${rainbow[val]}">${val}</td>`)
 }
+main()

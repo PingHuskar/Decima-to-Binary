@@ -9,6 +9,10 @@ $rainbow : black,red,orange,yellow,green,DeepSkyBlue,blue,purple;
     user-select: none;
 }
 
+body {
+    background: #333;
+}
+
 .container {
     display: flex;
     flex-flow: column;
@@ -22,13 +26,10 @@ $rainbow : black,red,orange,yellow,green,DeepSkyBlue,blue,purple;
         font-size: 4em;
     }
     input {
-        width: 50vw;
+        width: 75%;
         margin-top: 3vh;
         margin-bottom: 3vh;
         transition: transform 1.5s;
-        &:hover {
-            transform: scaleX(1.5);
-        }
     }
     h2 {
         margin-top: 2vh;
