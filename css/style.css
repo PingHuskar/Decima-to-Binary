@@ -380,4 +380,9 @@ body {
 }
 .container table tbody tr#octonary td.purple {
   background: purple;
+}
+.container button#random {
+  margin-top: 5vh;
+  text-align: center;
+  padding: 5px 7.5px;
 }/*# sourceMappingURL=style.css.map */

@@ -25,3 +25,18 @@ main(0)
 rangeSlider.noUiSlider.on('update', function (values, handle) {
     main(values[handle])
 });
+
+const randomNumber = () => Math.floor(Math.random() * parseInt(document.querySelector('.noUi-handle.noUi-handle-lower').attributes['aria-valuemax'].value))
+const calPercent = (num, max) => {
+    return ((1-(num/max))*100).toFixed(4)
+}
+
+document.querySelector('#random').addEventListener(`click`, (e) => {
+    const num = randomNumber()
+    main(num)
+    const max = document.querySelector('.noUi-handle.noUi-handle-lower').attributes['aria-valuemax'].value 
+    document.querySelector('.noUi-handle.noUi-handle-lower').attributes['aria-valuenow'].value = num.toFixed(1)
+    document.querySelector('.noUi-handle.noUi-handle-lower').attributes['aria-valuetext'].value = num.toFixed(1)
+    console.log(`translate(${num},-${calPercent(num,max)}%, 0px)`)
+    document.querySelector('.noUi-origin').style.transform = `translate(-${calPercent(num,max)}%, 0px)`
+})
